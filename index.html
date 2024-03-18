@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>The Simpsons Quote API</title>
+  </head>
+  <body>
+    <header
+      class="flex items-center justify-center"
+      style="background-color: #D1B271; height: 10vh"
+    >
+      <h1 class="text-4xl font-bold border-yellow-400 p-4" style="color: #f8db27; font-family: 'Banco', sans-serif; text-shadow: 
+      -1px -1px 0 #000000,  
+      1px -1px 0 #000000,  
+      -1px 1px 0 #000000,  
+      1px 1px 0 #000000;">The Simpsons API</h1>
+    </header>
+    <div
+      class="flex w-80 md:w-3/12 lg:w-3/12 xl:w-3/12 mx-auto mt-6 justify-between space-x-6"
+    >
+      <input
+        id="input-nombre"
+        type="text"
+        name="character-name"
+        placeholder="Name"
+        class="w-full bg-gray-200 rounded-md px-4 py-2 focus:outline-none focus:bg-white border border-gray-300"
+      />
+      <input
+        id="input-numero"
+        type="text"
+        name="number-quotes"
+        placeholder="Number"
+        class="w-full bg-gray-200 rounded-md px-4 py-2 focus:outline-none focus:bg-white border border-gray-300"
+      />
+      <button
+        id="btn-filtrar-quotes"
+        class="hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        style="background-color: #2f64d6;"
+      >
+        Filtrar
+      </button>
+    </div>
+    <div
+      id="contenedor-personajes"
+      class="flex flex-wrap justify-center space-x-6"
+    ></div>
+    <button
+      id="btn-cargar-citas"
+      class="flex justify-center items-center mt-6 mb-6 mx-auto hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+      style="background-color: #2f64d6;"
+    >
+      Cargar más citas
+    </button>
+    <audio id="Music" autoplay loop>
+      <source
+        src="./assets/_The Simpsons_ Main Title Theme.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
